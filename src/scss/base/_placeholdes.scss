@@ -1,0 +1,17 @@
+%container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 43px;
+}
+
+%flex-container-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%flex-container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
