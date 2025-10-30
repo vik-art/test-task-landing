@@ -24,3 +24,11 @@ input,
 textarea {
 	border: none;
 }
+
+body,
+html,
+*,
+::after,
+::before {
+	box-sizing: border-box;
+}
