@@ -10,7 +10,6 @@ exports.html = tasks.html;
 exports.php = tasks.php;
 exports.rastr = tasks.rastr;
 exports.webp = tasks.webp;
-exports.svg_sprite = tasks.svg_sprite;
 exports.bs_html = tasks.bs_html;
 exports.bs_php = tasks.bs_php;
 exports.watch = tasks.watch;
@@ -23,7 +22,6 @@ exports.default = gulp.parallel(
   exports.style,
   exports.rastr,
   exports.webp,
-  exports.svg_sprite,
   exports.html,
   exports.bs_html,
   exports.watch
@@ -35,7 +33,6 @@ exports.dev_php = gulp.parallel(
   exports.style,
   exports.rastr,
   exports.webp,
-  exports.svg_sprite,
   exports.php,
   exports.bs_php,
   exports.watch

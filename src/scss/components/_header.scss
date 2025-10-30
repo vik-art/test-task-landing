@@ -8,6 +8,7 @@
 
     .navigation-bar {
         @extend %flex-container-between;
+        align-items: flex-start;
 
         .nav-menu {
             width: 40%;

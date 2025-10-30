@@ -1,0 +1,117 @@
+.second-section {
+    padding-bottom: 42px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    color: $main-header-font-color;
+
+    &::after {
+        @include boder-with-gadient(null, 0)
+    }
+
+    &::before {
+        @include boder-with-gadient(0, null)
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+}
+
+.article-subtitle,
+.article-list-text,
+.article-footer-text,
+.section-content-items .title-item-text {
+    @extend %regular-font-style;
+}
+
+.article-list {
+    margin: 6px 0;
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin-bottom: 3px;
+    }
+}
+
+.article-list-text {
+    color: $list-text-color;
+    font-size: 11px;
+}
+
+.article-title {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 16px 0;
+}
+
+.articles-container {
+    @extend %flex-container-between;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.article-title,
+.section-content-items,
+.section-content-items .title-container {
+    @extend %flex-container-between;
+    gap: 16px;
+}
+
+.title-container {
+    margin-bottom: 8px;
+    gap: 0;
+}
+
+.section-content-news {
+    flex-basis: 50%;
+}
+
+article {
+    flex-basis: 50%;
+}
+
+.section-content-items li {
+    flex-basis: 50%;
+
+    .title-text {
+        flex-basis: 200px;
+
+        .section-item-title {
+            @extend %article-title-style;
+            margin-bottom: 8px;
+        }
+
+        .section-item-subtitle {
+            @extend %tags-text-style;
+        }
+    }
+}
+
+.date-container {
+    background-color: $primary-icon-bg-color;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    @extend %flex-container-center;
+    flex-direction: column;
+    @extend %regular-font-style;
+    text-transform: uppercase;
+
+    .year {
+        font-size: 17px;
+    }
+}

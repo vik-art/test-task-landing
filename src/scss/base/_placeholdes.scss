@@ -1,7 +1,7 @@
 %container {
-    width: 80%;
+    width: 1170px;
     margin: 0 auto;
-    padding-top: 43px;
+    padding-top: 42px;
 }
 
 %flex-container-between {
@@ -14,4 +14,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+%regular-font-style {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+%article-title-style {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #D00B01;
+}
+
+%tags-text-style {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: italic;
+    color: #9D9D9D;
 }

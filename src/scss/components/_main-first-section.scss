@@ -1,0 +1,54 @@
+.section-svg-icon .icon-bg {
+    fill: $primary-icon-bg-color;
+    transition: $transition;
+}
+
+.section-svg-icon {
+    cursor: pointer;
+}
+
+.first-section-container {
+    padding-bottom: 42px;
+}
+
+.section-svg-icon:hover .icon-bg,
+.section-svg-icon:focus .icon-bg {
+    fill: $accent-font-color;
+    transition: $transition;
+}
+
+.section-svg-icon .icon-color {
+    fill: $black;
+    transition: $transition;
+}
+
+.section-svg-icon:hover .icon-color,
+.section-svg-icon:focus .icon-color {
+    fill: $white;
+    transition: $transition;
+}
+
+.section-content {
+    @extend %flex-container-between;
+    gap: 48px;
+
+    li {
+        text-align: center;
+        @extend %flex-container-center;
+        flex-direction: column;
+        gap: 16px;
+
+        .list-item-title {
+            font-size: 20px;
+            text-transform: uppercase;
+            line-height: 18px;
+            font-weight: 800;
+        }
+
+        .list-item-text {
+            color: $section-text-color;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
