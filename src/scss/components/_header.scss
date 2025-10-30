@@ -21,11 +21,11 @@
                 font-weight: 800;
                 transition: $transition;
 
-                &.active {
+                &.active-header-link {
                     color: $accent-font-color;
                 }
 
-                &:hover:not(.active) {
+                &:hover:not(.active-header-link) {
                     color: $secondary-font-color;
                     transition: $transition;
                 }

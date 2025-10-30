@@ -93,10 +93,29 @@ article {
         .section-item-title {
             @extend %article-title-style;
             margin-bottom: 8px;
+            transition: $transition;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                color: $font-hover-color;
+                transition: $transition;
+            }
         }
 
         .section-item-subtitle {
             @extend %tags-text-style;
+
+            .author {
+                color: $list-text-color;
+                transition: $transition;
+
+                &:hover,
+                &:focus {
+                    color: $accent-font-color;
+                    transition: $transition;
+                }
+            }
         }
     }
 }
@@ -110,6 +129,7 @@ article {
     flex-direction: column;
     @extend %regular-font-style;
     text-transform: uppercase;
+    flex: 1 0 auto;
 
     .year {
         font-size: 17px;

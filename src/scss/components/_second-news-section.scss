@@ -1,0 +1,29 @@
+.article-image {
+    width: 270px;
+    height: 190px;
+    background-color: $article-bg-color;
+    margin-bottom: 12px;
+}
+
+.second-section-title-container {
+    display: block;
+    width: 270px;
+    margin-bottom: 12px;
+}
+
+.section-content-items {
+    align-items: flex-start;
+    gap: 8px;
+
+    li {
+        width: 270px;
+    }
+}
+
+.title-item-text {
+    width: 270px;
+}
+
+.articles-list-container {
+    padding-bottom: 42px;
+}

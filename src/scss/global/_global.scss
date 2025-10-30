@@ -6,4 +6,13 @@
 
 .active {
 	color: $accent-font-color;
+	font-style: italic;
+
+	transition: $transition;
+
+	&:hover,
+	&:focus {
+		color: $font-hover-color;
+		transition: $transition;
+	}
 }
