@@ -6,4 +6,125 @@
 
 .tweet-and-form-container {
     @extend %flex-container-between;
+    gap: 30px;
+    align-items: flex-start;
+    padding-bottom: 43px;
+}
+
+.tweet-container-item {
+    flex-basis: 25%;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 8px;
+    }
+}
+
+.tweet-section-text {
+    @extend %regular-font-style;
+    line-height: 16px;
+}
+
+.tweet-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .twitter-img {
+        margin-bottom: -3px;
+    }
+
+    .speech-bubble {
+        margin-right: 8px;
+    }
+}
+
+.smaller {
+
+    li:first-child {
+        padding-bottom: 16px;
+        border-bottom: 1px solid $border-color;
+    }
+}
+
+.second {
+    padding: 8px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+
+.tweet-form-input {
+    width: 270px;
+    height: 28px;
+    background-color: $primary-icon-bg-color;
+    padding: 6px 11px;
+    box-sizing: border-box;
+    color: $main-font-color;
+    border-radius: 2px;
+
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-style: italic;
+    }
+}
+
+.tweet-form-textarea {
+    box-sizing: border-box;
+    width: 270px;
+    height: 130px;
+    background-color: $primary-icon-bg-color;
+    resize: none;
+    padding: 6px 11px;
+    font-style: italic;
+    font-family: $main-font-famiily;
+    color: $main-font-color;
+    border-radius: 2px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 3px;
+}
+
+.form-button-container {
+    padding: 6px 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 11px;
+    color: $white;
+    background-color: $main-font-color;
+    cursor: pointer;
+    transition: $transition;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-font-color;
+        transition: $transition;
+    }
+}
+
+.author-container {
+    margin-top: 4px;
+    @extend %regular-font-style;
+    line-height: 16px;
+}
+
+.grid-container {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(4, 63px);
+    grid-template-rows: repeat(3, 63px);
+    gap: 6px;
+
+    .grid-item {
+        background-color: $font-hover-color;
+        cursor: pointer;
+    }
 }
