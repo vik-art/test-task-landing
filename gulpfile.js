@@ -3,7 +3,6 @@ const requireDir = require('require-dir');
 const tasks = requireDir('./tasks');
 
 exports.libs_style = tasks.libs_style;
-exports.svg_css = tasks.svg_css;
 exports.fonts = tasks.fonts;
 exports.style = tasks.style;
 exports.html = tasks.html;
@@ -17,7 +16,6 @@ exports.deploy = tasks.deploy;
 
 exports.default = gulp.parallel(
   exports.libs_style,
-  exports.svg_css,
   exports.fonts,
   exports.style,
   exports.rastr,
@@ -28,7 +26,6 @@ exports.default = gulp.parallel(
 )
 exports.dev_php = gulp.parallel(
   exports.libs_style,
-  exports.svg_css,
   exports.fonts,
   exports.style,
   exports.rastr,

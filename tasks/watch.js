@@ -11,5 +11,4 @@ module.exports = function watching() {
   watch('src/**/*.json', parallel('html'));
   watch('src/img/**/*.+(svg|ico)', parallel('rastr'));
   watch('src/img/**/*.+(png|jpg|jpeg|gif)', series('rastr', 'webp'));
-  watch('src/svg/css/**/*.svg', series('svg_css', 'style'));
 }
